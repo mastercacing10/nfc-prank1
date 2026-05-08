@@ -1,39 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>System Alert</title>
+  <title></title>
   <style>
     body {
       margin: 0;
       height: 100vh;
-      font-family: Arial;
-      color: red;
-      text-align: center;
-
       background-image: url('wallpaper.png');
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
     }
-
-    .overlay {
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      background: rgba(0, 0, 0, 0.5);
-    }
   </style>
 </head>
 
 <body onclick="playSound()">
-  <div class="overlay">
-    <h1>WARNING</h1>
-    <p>Critical system alert detected</p>
-    <p>Tap anywhere to continue</p>
-  </div>
-
   <audio id="sound" src="alarm.mp3"></audio>
 
   <script>
