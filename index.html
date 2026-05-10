@@ -15,13 +15,14 @@
 </head>
 
 <body onclick="playSound()">
-  <audio id="sound" src="boom2.mp3"></audio>
+  <audio id="sound" src="boom2.mp3" loop></audio>
 
   <script>
     function playSound() {
-      document.getElementById('sound').play();
+      const audio = document.getElementById('sound');
+      audio.volume = 1; // max loudness
+      audio.play();
     }
   </script>
 </body>
 </html>
-
